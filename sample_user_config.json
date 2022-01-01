@@ -11,5 +11,6 @@
     "supportsystempwarning": "no",
     "maxlanport": "1"
   },
-  "ramdisk_copy": {}
+  "ramdisk_copy": {},
+  "extensions": []
 }
