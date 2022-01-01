@@ -32,8 +32,7 @@ jobs:
         run: |
           cp sample_user_config.json ${{matrix.platform}}_user_config.json
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/jumkey/redpill-load/develop/redpill-acpid/rpext-index.json
-          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/mpt3sas/rpext-index.json
-
+          
       - name: 编译引导镜像
         run: ./redpill_tool_chain.sh auto ${{matrix.platform}}-${{matrix.version}}
 
